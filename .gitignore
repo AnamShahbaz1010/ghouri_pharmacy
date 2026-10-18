@@ -1,0 +1,5 @@
+uploads/prescriptions/*
+uploads/medicines/*
+!uploads/prescriptions/.gitkeep
+!uploads/medicines/.gitkeep
+create_admin.php

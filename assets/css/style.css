@@ -1,0 +1,46 @@
+:root {
+    --primary-green: #1F6F4A;
+    --dark-green: #15492F;
+    --light-green: #EAF4EE;
+    --white: #FFFFFF;
+}
+
+body {
+    background-color: var(--white);
+    color: #222;
+}
+
+h1, h2, h3, h4, h5 {
+    color: var(--dark-green);
+}
+
+.navbar-custom {
+    background-color: var(--primary-green);
+}
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+    color: var(--white);
+}
+.navbar-custom .nav-link:hover {
+    color: var(--light-green);
+}
+
+.btn-green {
+    background-color: var(--primary-green);
+    border-color: var(--primary-green);
+    color: var(--white);
+}
+.btn-green:hover {
+    background-color: var(--dark-green);
+    border-color: var(--dark-green);
+    color: var(--white);
+}
+
+.bg-light-green {
+    background-color: var(--light-green);
+}
+
+footer {
+    background-color: var(--dark-green);
+    color: var(--white);
+}
