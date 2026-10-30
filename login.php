@@ -43,6 +43,9 @@ include 'includes/navbar.php';
     <?php if (isset($_GET['registered'])): ?>
         <div class="alert alert-success">Registration successful. Please log in.</div>
     <?php endif; ?>
+    <?php if (isset($_GET['required'])): ?>
+    <div class="alert alert-info">Please log in to continue.</div>
+<?php endif; ?>
 
     <?php if (!empty($errors)): ?>
         <div class="alert alert-danger">

@@ -98,9 +98,15 @@ include 'includes/navbar.php';
                         <?php endif; ?>
                     </div>
                     <div class="card-footer bg-white border-0">
-                        <a href="medicine_detail.php?id=<?php echo $med['id']; ?>"
-                           class="btn btn-outline-green btn-sm w-100">View Details</a>
-                    </div>
+    <a href="medicine_detail.php?id=<?php echo $med['id']; ?>"
+       class="btn btn-outline-green btn-sm w-100 mb-2">View Details</a>
+    <?php if ($med['stock_quantity'] > 0): ?>
+        <a href="add_to_cart.php?id=<?php echo $med['id']; ?>&qty=1"
+           class="btn btn-green btn-sm w-100">Add to Cart</a>
+    <?php else: ?>
+        <button class="btn btn-secondary btn-sm w-100" disabled>Out of Stock</button>
+    <?php endif; ?>
+</div>
                 </div>
             </div>
         <?php endwhile; ?>
